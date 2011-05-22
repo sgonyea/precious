@@ -10,11 +10,13 @@ This is a very simple gem that pulls in the Rake helpers from Bundler, but neute
 
 ### In your gem's Rakefile
 
-        # Recommended, but not required:
-        task :release => :spec
+        require 'repcious'
 
         # Replace 'Bundler::GemHelper.install_tasks' with:
         Precious::GemHelper.install_tasks
+
+        # Recommended, but not required:
+        task :release => :spec
 
 ## Caveats:
 
